@@ -12,6 +12,8 @@ public class ConcreteNotifier extends Notifier {
 	 * @Description:	添加監聽者（被通知者）
 	 * 					令事件處理類為這些監聽者添加事件。
 	 * 					或者說，讓監聽者的某個耳朵（方法）來接受事件通知者發出的消息
+	 * 
+	 * 					按照前面的說法，這裡就是把魚送到廚房的操作了
 	 * @param object
 	 * @param methodName
 	 * @param args
@@ -21,6 +23,9 @@ public class ConcreteNotifier extends Notifier {
 		this.getEventHandler().addEvent(object, methodName, args);
 	}
 
+	/**
+	 * @Description:	殺魚，然後聽到魚的慘叫，就是這個方法要做的事了。
+	 */
 	@Override
 	public void notifyX() {
 		try {

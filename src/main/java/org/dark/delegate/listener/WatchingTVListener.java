@@ -4,7 +4,7 @@ import java.util.Date;
 
 /**
  * @Title : 具体的观察者类1，不再需要抽象观察者
- * @Description:
+ * @Description	:	按照前面對Event類的解釋，它就是一條魚了
  * @author liwei
  *
  */
