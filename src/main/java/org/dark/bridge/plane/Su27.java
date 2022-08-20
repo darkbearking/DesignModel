@@ -7,7 +7,7 @@ public class Su27 extends AbstractPlane {
 	@Override
 	public void printPlane() {
 		super.printPlane();
-		System.out.println("ÌK27");
+		System.out.println("è‹27");
 	}
 	
 	@Override

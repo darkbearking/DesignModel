@@ -3,21 +3,21 @@ package org.dark.delegate.listener;
 import java.util.Date;
 
 /**
- * @Title : ¾ßÌåµÄ¹Û²ìÕßÀà2£¬²»ÔÙĞèÒª³éÏó¹Û²ìÕß
- * @Description	:	°´ÕÕÇ°ÃæŒ¦EventîµÄ½âáŒ£¬Ëü¾ÍÊÇÒ»—lô~ÁË
+ * @Title : å…·ä½“çš„è§‚å¯Ÿè€…ç±»2ï¼Œä¸å†éœ€è¦æŠ½è±¡è§‚å¯Ÿè€…
+ * @Description	:	æŒ‰ç…§å‰é¢å°Eventé¡çš„è§£é‡‹ï¼Œå®ƒå°±æ˜¯ä¸€æ¢é­šäº†
  * @author liwei
  *
  */
 public class PlayingGameListener {
-	
+
 	public PlayingGameListener() {
 		System.out.println("playing");
 	}
 
 	/**
-	 * @Description	:	ÎÒ·Qß@Ğ©·½·¨é¶ú¶ä·½·¨
-	 * 						»òÕß¿ÉÒÔÕf£¬±»±OÂ Õß£¨Ó^²ìÕß¡¢±»Í¨ÖªÕß£¬½ĞÊ²üNŸoËùÖ^À²£©µÄÈÎºÎÒ»‚€·½·¨¶¼¿ÉÒÔÊÇÒ»ëb¶ú¶ä
-	 * 						ÓÃí½ÓÊÕ±OÂ Õß°lËÍµÄÏûÏ¢
+	 * @Description	:	æˆ‘ç¨±é€™äº›æ–¹æ³•ç‚ºè€³æœµæ–¹æ³•
+	 * 						æˆ–è€…å¯ä»¥èªªï¼Œè¢«ç›£è½è€…ï¼ˆè§€å¯Ÿè€…ã€è¢«é€šçŸ¥è€…ï¼Œå«ä»€éº¼ç„¡æ‰€è¬‚å•¦ï¼‰çš„ä»»ä½•ä¸€å€‹æ–¹æ³•éƒ½å¯ä»¥æ˜¯ä¸€éš»è€³æœµ
+	 * 						ç”¨ä¾†æ¥æ”¶ç›£è½è€…ç™¼é€çš„æ¶ˆæ¯
 	 * @param date
 	 */
 	public void stopPlayingGame(Date date) {

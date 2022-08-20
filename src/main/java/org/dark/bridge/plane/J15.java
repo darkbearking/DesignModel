@@ -8,7 +8,7 @@ public class J15 extends AbstractPlane {
 	@Override
 	public void printPlane() {
 		super.printPlane();
-		System.out.println("šž15");
+		System.out.println("æ­¼15");
 	}
 
 	@Override

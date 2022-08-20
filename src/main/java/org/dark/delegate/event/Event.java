@@ -3,11 +3,11 @@ package org.dark.delegate.event;
 import java.lang.reflect.Method;
 
 /**
- * @Title	:	ÊÂ¼şî
- * 				Œ¢ËüªšÁ¢³öíµÄÄ¿µÄ£¬ÊÇÓÃËüí²Ù×÷Œówbeanî»òÕß¹¦ÄÜî
- * 				Èç¹ûŒ¢ŒówbeanÒ•éÒ»Õû—lô~µÄÔ’
- * 				ÄÇüNß@‚€î¾ÍÊÇÄÜ°Ñô~´óĞ¶°Ë‰Káá«@µÃµ½ÁËô~î^¡¢ô~¹Ç¡¢ô~ÈâµÈÁã¼şµÄ¹¤¾ß£¨Í¬•rËüÒ²°Ñô~µÄÁã¼ş·ÅÔÚ×Ô¼ºß@Ñe´æÆğí£©
- * 				¸ĞÓXß@‚€îµÄ´æÔÚ£¬¼ƒ´âÊÇéÁËM×ãºÍ·ûºÏ†ÎÒ»ÂšØŸÔ­„t¡£
+ * @Title	:	äº‹ä»¶é¡
+ * 				å°‡å®ƒç¨ç«‹å‡ºä¾†çš„ç›®çš„ï¼Œæ˜¯ç”¨å®ƒä¾†æ“ä½œå¯¦é«”beané¡æˆ–è€…åŠŸèƒ½é¡
+ * 				å¦‚æœå°‡å¯¦é«”beanè¦–ç‚ºä¸€æ•´æ¢é­šçš„è©±
+ * 				é‚£éº¼é€™å€‹é¡å°±æ˜¯èƒ½æŠŠé­šå¤§å¸å…«å¡Šå¾Œç²å¾—åˆ°äº†é­šé ­ã€é­šéª¨ã€é­šè‚‰ç­‰é›¶ä»¶çš„å·¥å…·ï¼ˆåŒæ™‚å®ƒä¹ŸæŠŠé­šçš„é›¶ä»¶æ”¾åœ¨è‡ªå·±é€™è£¡å­˜èµ·ä¾†ï¼‰
+ * 				æ„Ÿè¦ºé€™å€‹é¡çš„å­˜åœ¨ï¼Œç´”ç²¹æ˜¯ç‚ºäº†æ»¿è¶³å’Œç¬¦åˆå–®ä¸€è·è²¬åŸå‰‡ã€‚
  * @Description:
  * @author liwei
  *
@@ -21,7 +21,7 @@ public class Event {
 
 	private Class[] paramTypes;
 
-	//Œ¦Ä³‚€îµÄÄ³‚€·½·¨½‰¶¨ÊÂ¼ş
+	//å°æŸå€‹é¡çš„æŸå€‹æ–¹æ³•ç¶å®šäº‹ä»¶
 	public Event(Object object, String method, Object... args) {
 		this.object = object;
 		this.methodName = method;
@@ -29,7 +29,7 @@ public class Event {
 		contractParamTypes(this.params);
 	}
 
-	//«@È¡·½·¨µÄ¸÷¸öÈë²ÎÀàĞÍ
+	//ç²å–æ–¹æ³•çš„å„ä¸ªå…¥å‚ç±»å‹
 	private void contractParamTypes(Object[] params) {
 		this.paramTypes = new Class[params.length];
 		for (int i = 0; i < params.length; i++) {
@@ -37,16 +37,16 @@ public class Event {
 		}
 	}
 
-	//Õ{ÓÃÍâ²¿îµÄÄ³‚€·½·¨
+	//èª¿ç”¨å¤–éƒ¨é¡çš„æŸå€‹æ–¹æ³•
 	public void invoke() throws Exception {
 		Method method = object.getClass().getMethod(this.methodName, this.paramTypes);
-		
-		// ÅĞ¶ÏÊÇ·ñ´æÔÚÕâ¸öº¯Êı
+
+		// åˆ¤æ–­æ˜¯å¦å­˜åœ¨è¿™ä¸ªå‡½æ•°
 		if (null == method) {
 			return;
 		}
-		
-		// ÀûÓÃ·´Éä»úÖÆµ÷ÓÃº¯Êı
+
+		// åˆ©ç”¨åå°„æœºåˆ¶è°ƒç”¨å‡½æ•°
 		method.invoke(this.object, this.params);
 	}
 }

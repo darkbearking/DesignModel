@@ -3,8 +3,8 @@ package org.dark.delegate.notifier;
 import org.dark.delegate.event.EventHandler;
 
 /**
- * @Title 		: 	通知者抽象类
- * @Description:	當前類作為橋樑，銜接事件管理類與要綁定的對象
+ * @Title 		: 	閫氱煡鑰呮娊璞＄被
+ * @Description:	鐣跺墠椤炰綔鐐烘⿱妯戯紝閵滄帴浜嬩欢绠＄悊椤炶垏瑕佺秮瀹氱殑灏嶈薄
  * @author liwei
  *
  */
@@ -20,7 +20,7 @@ public abstract class Notifier {
 	}
 
 	/**
-	 * @Description:	添加監聽者（被通知者）
+	 * @Description:	娣诲姞鐩ｈ伣鑰咃紙琚�氱煡鑰咃級
 	 * @param object
 	 * @param methodName
 	 * @param args

@@ -1,7 +1,7 @@
 package org.dark.bridge.assembly;
 
 /**
- * 所有部件的抽象
+ * 鎵�鏈夐儴浠剁殑鎶借薄
  * @author liwei
  *
  */

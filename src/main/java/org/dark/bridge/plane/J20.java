@@ -7,7 +7,7 @@ public class J20 extends AbstractPlane {
 	@Override
 	public void printPlane() {
 		super.printPlane();
-		System.out.println("šž20");
+		System.out.println("æ­¼20");
 	}
 
 	@Override

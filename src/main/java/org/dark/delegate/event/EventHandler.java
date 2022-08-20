@@ -4,10 +4,10 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * @Title 		: 	ÊÂ¼şÌÀíÀà
- * @Description:	Æä×÷ÓÃÖ÷ÒªÊÇŒ¢½‰¶¨ÁËÊÂ¼şµÄî‚ƒ¹ÜÀíÆğí¡£KÇÒÔÚĞèÒªµÄ•rºò£¬Í¨ß^ÊÂ¼şÕ{ÓÃ½‰¶¨îµÄ½‰¶¨·½·¨
- * 					Èç¹ûÇ°ÃæµÄEventîŒ¢ô~ßMĞĞÁË³õ²½ÌÀí¡£ÄÇüNß@‚€î¾ÍÊÇ×öô~µÄN·¿¡£
- * 					N·¿Ñe¼ÈÓĞ‚}ì£¨List<Event>£©¡£ß€ÓĞÅëô~µÄÔîÌ¨£¨notifyX()£©
+ * @Title 		: 	äº‹ä»¶è™•ç†ç±»
+ * @Description:	å…¶ä½œç”¨ä¸»è¦æ˜¯å°‡ç¶å®šäº†äº‹ä»¶çš„é¡å€‘ç®¡ç†èµ·ä¾†ã€‚ä¸¦ä¸”åœ¨éœ€è¦çš„æ™‚å€™ï¼Œé€šéäº‹ä»¶èª¿ç”¨ç¶å®šé¡çš„ç¶å®šæ–¹æ³•
+ * 					å¦‚æœå‰é¢çš„Eventé¡å°‡é­šé€²è¡Œäº†åˆæ­¥è™•ç†ã€‚é‚£éº¼é€™å€‹é¡å°±æ˜¯åšé­šçš„å»šæˆ¿ã€‚
+ * 					å»šæˆ¿è£¡æ—¢æœ‰å€‰åº«ï¼ˆList<Event>ï¼‰ã€‚é‚„æœ‰çƒ¹é­šçš„ç¶å°ï¼ˆnotifyX()ï¼‰
  * @author liwei
  *
  */
@@ -19,12 +19,12 @@ public class EventHandler {
 		objects = new ArrayList<Event>();
 	}
 
-	//Œ¢½‰¶¨ÁËîµÄÊÂ¼ş¹ÜÀíÆğí
+	//å°‡ç¶å®šäº†é¡çš„äº‹ä»¶ç®¡ç†èµ·ä¾†
 	public void addEvent(Object object, String methodName, Object... args) {
 		objects.add(new Event(object, methodName, args));
 	}
 
-	//ÔL†–Ã¿‚€½‰¶¨îµÄ½‰¶¨·½·¨
+	//è¨ªå•æ¯å€‹ç¶å®šé¡çš„ç¶å®šæ–¹æ³•
 	public void notifyX() throws Exception {
 		for (Event event : objects) {
 			event.invoke();

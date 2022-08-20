@@ -1,7 +1,7 @@
 package org.dark.bridge.assembly;
 
 /**
- * À×ß_
+ * é›·è¾¾
  * @author liwei
  *
  */
@@ -9,7 +9,7 @@ public class AssemblyOfRadar implements AssemblyIntf {
 
 	public void printUnitName() {
 		// TODO Auto-generated method stub
-		System.out.println("²¿¼şÃû£ºÀ×ß_");
+		System.out.println("éƒ¨ä»¶åç§°ï¼šé›·è¾¾");
 	}
 
 }

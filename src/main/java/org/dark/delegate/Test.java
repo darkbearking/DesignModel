@@ -8,7 +8,7 @@ import org.dark.delegate.notifier.ConcreteNotifier;
 import org.dark.delegate.notifier.Notifier;
 
 /**
- * @Title : �yԇ�
+ * @Title : 測試類
  * @Description:
  * @author liwei
  *

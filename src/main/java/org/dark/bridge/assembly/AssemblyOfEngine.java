@@ -1,7 +1,7 @@
 package org.dark.bridge.assembly;
 
 /**
- * °l„Ó™C
+ * å‘åŠ¨æœº
  * @author liwei
  *
  */
@@ -9,7 +9,7 @@ public class AssemblyOfEngine implements AssemblyIntf{
 
 	public void printUnitName() {
 		// TODO Auto-generated method stub
-		System.out.println("²¿¼şÃû£º°l„Ó™C");
+		System.out.println("éƒ¨ä»¶åç§°ï¼šå‘åŠ¨æœº");
 	}
 
 }
